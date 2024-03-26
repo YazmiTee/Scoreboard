@@ -2,9 +2,9 @@
 let homeStoreEl =document.getElementById("home-score")
 let homeScore = 0
 
-// let guestScoreBtnOne = document.getElementById("guest-score-btn-1")
-let guestStoreEl =document.getElementById("guest-score")
-let guestScore = 0
+// let awayScoreBtnOne = document.getElementById("away-score-btn-1")
+let awayStoreEl =document.getElementById("away-score")
+let awayScore = 0
 
 // Functions for the home team buttons
 
@@ -23,26 +23,26 @@ function increaseHomeScoreThree(){
     homeStoreEl.textContent = homeScore
 }
 
-// Functions for the guest team buttons
+// Functions for the away team buttons
 
-function increaseGuestScoreOne(){
-    guestScore += 1
-    guestStoreEl.textContent = guestScore
+function increaseawayScoreOne(){
+    awayScore += 1
+    awayStoreEl.textContent = awayScore
 }
 
-function increaseGuestScoreTwo(){
-    guestScore += 2
-    guestStoreEl.textContent = guestScore
+function increaseawayScoreTwo(){
+    awayScore += 2
+    awayStoreEl.textContent = awayScore
 }
 
-function increaseGuestScoreThree(){
-    guestScore += 3
-    guestStoreEl.textContent = guestScore
+function increaseawayScoreThree(){
+    awayScore += 3
+    awayStoreEl.textContent = awayScore
 }
 
 function resetScore(){
     homeScore = 0
-    guestScore = 0
+    awayScore = 0
     homeStoreEl.textContent = homeScore
-    guestStoreEl.textContent = guestScore
+    awayStoreEl.textContent = awayScore
 }
